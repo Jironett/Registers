@@ -111,6 +111,18 @@ class Registry {
     }
 
     /**
+     * @param array $data
+     * @throws \Jironett\Registers\InvalidArgumentException
+     * @throws \Jironett\Registers\DuplicateKeyException
+     */
+    public function fill(array $data = [])
+    {
+        foreach($data as $position => $value){
+            $this->add($value, $position);
+        }
+    }
+
+    /**
      * @param int|string $position
      * @return \Jironett\Registers\Registry $this
      */
