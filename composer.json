@@ -1,0 +1,31 @@
+{
+    "name": "jironett/registers",
+    "description": "Registers are an extension for Nette framework. Registers allow sharing custom static data between modules or simply where you will need.",
+    "license": "New BSD License",
+    "authors": [
+        {
+            "name": "Jiri Dusek",
+            "homepage": "http://www.jironett.cz"
+        }
+    ],
+    "require": {
+      "php": ">= 5.4.0",
+      "nette/di": "~2.3@dev"    
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+      "psr-4": {
+        "Jironett\\Registers\\": "src/"
+      },
+		  "classmap": [
+			 "src/Exceptions.php"
+		  ]
+    },
+    "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+
+}
+
